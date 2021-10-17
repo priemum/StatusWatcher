@@ -4,7 +4,7 @@ const client = new Client();
 const config = require("./config");
 const db = require("quick.db");
 
-client.on("ready", async () => {
+client.on("ready", async () => {          
   console.log("[#] Bot successfully connected as " + client.user.tag + ".");
   client.user.setPresence({
     activity: { type: "WATCHING", name: "the statuses | !services" },
